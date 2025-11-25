@@ -101,6 +101,121 @@ Example labs:
 I am still early in my cybersecurity career, but I built this portfolio to show that I can learn quickly, think like a defender, and communicate clearly with both technical and non-technical stakeholders.
 
 ---
+## Reposiity Structure
+
+cybersecurity-portfolio/
+│
+├── README.md
+│
+├── soc-analyst/
+│   ├── event-log-analysis/
+│   │   ├── notes.md
+│   │   ├── screenshots/
+│   │   │   └── .gitkeep
+│   │   └── artifacts/
+│   │       └── .gitkeep
+│   │
+│   ├── network-traffic-analysis/
+│   │   ├── notes.md
+│   │   ├── captures/
+│   │   │   └── .gitkeep
+│   │   └── screenshots/
+│   │       └── .gitkeep
+│   │
+│   └── threat-hunting/
+│       ├── notes.md
+│       ├── detections/
+│       │   └── .gitkeep
+│       └── screenshots/
+│           └── .gitkeep
+│
+├── vulnerability-analysis/
+│   ├── vuln-lab-01/
+│   │   ├── notes.md
+│   │   ├── vulnerable-files/
+│   │   │   └── .gitkeep
+│   │   └── screenshots/
+│   │       └── .gitkeep
+│   └── reports/
+│       └── sample-report.md
+│
+├── iam/
+│   ├── iam-lab-01-zero-trust/
+│   │   ├── notes.md
+│   │   ├── diagrams/
+│   │   │   └── .gitkeep
+│   │   └── screenshots/
+│   │       └── .gitkeep
+│   │
+│   └── salesforce-identity/
+│       ├── notes.md
+│       ├── profiles-permissionsets/
+│       │   └── .gitkeep
+│       └── screenshots/
+│           └── .gitkeep
+│
+├── python/
+│   ├── beginner/
+│   │   ├── project-01/
+│   │   │   └── script.py
+│   │   ├── project-02/
+│   │   │   └── script.py
+│   │   └── project-03/
+│   │       └── script.py
+│   │
+│   └── security-automation/
+│       ├── failed-logins-parser/
+│       │   ├── script.py
+│       │   └── sample-log.txt
+│       └── quick-scanner/
+│           └── script.py
+│
+├── salesforce-security/
+│   ├── field-level-security-demo/
+│   │   ├── notes.md
+│   │   └── screenshots/
+│   │       └── .gitkeep
+│   │
+│   ├── permission-set-hardening/
+│   │   ├── notes.md
+│   │   └── screenshots/
+│   │       └── .gitkeep
+│   │
+│   └── login-history-analysis/
+│       ├── notes.md
+│       └── screenshots/
+│           └── .gitkeep
+│
+├── cloud/
+│   ├── aws-security-fundamentals/
+│   │   ├── notes.md
+│   │   ├── diagrams/
+│   │   │   └── .gitkeep
+│   │   └── screenshots/
+│   │       └── .gitkeep
+│   │
+│   └── azure-defender-lab/
+│       ├── notes.md
+│       └── screenshots/
+│           └── .gitkeep
+│
+├── network/
+│   ├── packet-capture-basics/
+│   │   ├── notes.md
+│   │   └── captures/
+│   │       └── .gitkeep
+│   │
+│   └── firewall-rules-lab/
+│       ├── notes.md
+│       └── screenshots/
+│           └── .gitkeep
+│
+└── resume-and-documents/
+    ├── current-resume.docx
+    ├── cover-letter.docx
+    └── portfolio-overview.pdf
+
+---
 
 ## How to Navigate This Repo
 
