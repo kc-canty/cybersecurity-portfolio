@@ -99,119 +99,78 @@ I am still early in my cybersecurity career, but I built this portfolio to show 
 ---
 ## Reposiity Structure
 
+## Repository Structure
+
+```
 cybersecurity-portfolio/
-│
-├── README.md
 │
 ├── soc-analyst/
 │   ├── event-log-analysis/
 │   │   ├── notes.md
-│   │   ├── screenshots/
-│   │   │   └── .gitkeep
-│   │   └── artifacts/
-│   │       └── .gitkeep
-│   │
+│   │   └── screenshots/
 │   ├── network-traffic-analysis/
 │   │   ├── notes.md
-│   │   ├── captures/
-│   │   │   └── .gitkeep
-│   │   └── screenshots/
-│   │       └── .gitkeep
-│   │
-│   └── threat-hunting/
-│       ├── notes.md
-│       ├── detections/
-│       │   └── .gitkeep
-│       └── screenshots/
-│           └── .gitkeep
-│
-├── vulnerability-analysis/
-│   ├── vuln-lab-01/
+│   │   └── captures/
+│   ├── threat-hunting/
 │   │   ├── notes.md
-│   │   ├── vulnerable-files/
-│   │   │   └── .gitkeep
-│   │   └── screenshots/
-│   │       └── .gitkeep
-│   └── reports/
-│       └── sample-report.md
+│   │   └── detections/
+│   └── vulnerability-analysis/
+│       ├── vuln-lab-01/
+│       │   ├── notes.md
+│       │   ├── screenshots/
+│       │   └── vulnerable-files/
+│       └── reports/
+│           └── sample-report.md
 │
 ├── iam/
 │   ├── iam-lab-01-zero-trust/
 │   │   ├── notes.md
-│   │   ├── diagrams/
-│   │   │   └── .gitkeep
 │   │   └── screenshots/
-│   │       └── .gitkeep
-│   │
-│   └── salesforce-identity/
+│   └── profiles-permissionsets/
 │       ├── notes.md
-│       ├── profiles-permissionsets/
-│       │   └── .gitkeep
 │       └── screenshots/
-│           └── .gitkeep
+│
+├── salesforce-identity/
+│   ├── project-01/
+│   │   └── script.py
+│   ├── project-02/
+│   │   └── script.py
+│   └── project-03/
+│       └── script.py
 │
 ├── python/
-│   ├── beginner/
-│   │   ├── project-01/
-│   │   │   └── script.py
-│   │   ├── project-02/
-│   │   │   └── script.py
-│   │   └── project-03/
-│   │       └── script.py
-│   │
-│   └── security-automation/
+│   └── beginner/
 │       ├── failed-logins-parser/
 │       │   ├── script.py
 │       │   └── sample-log.txt
 │       └── quick-scanner/
 │           └── script.py
 │
-├── salesforce-security/
+├── security-automation/
 │   ├── field-level-security-demo/
 │   │   ├── notes.md
 │   │   └── screenshots/
-│   │       └── .gitkeep
-│   │
-│   ├── permission-set-hardening/
-│   │   ├── notes.md
-│   │   └── screenshots/
-│   │       └── .gitkeep
-│   │
 │   └── login-history-analysis/
 │       ├── notes.md
 │       └── screenshots/
-│           └── .gitkeep
 │
 ├── cloud/
 │   ├── aws-security-fundamentals/
 │   │   ├── notes.md
-│   │   ├── diagrams/
-│   │   │   └── .gitkeep
-│   │   └── screenshots/
-│   │       └── .gitkeep
-│   │
+│   │   └── diagrams/
 │   └── azure-defender-lab/
 │       ├── notes.md
-│       └── screenshots/
-│           └── .gitkeep
+│       └── captures/
 │
 ├── network/
-│   ├── packet-capture-basics/
-│   │   ├── notes.md
-│   │   └── captures/
-│   │       └── .gitkeep
-│   │
-│   └── firewall-rules-lab/
+│   └── packet-capture-basics/
 │       ├── notes.md
 │       └── screenshots/
-│           └── .gitkeep
 │
-└── resume-and-documents/
-    ├── current-resume.docx
-    ├── cover-letter.docx
-    └── portfolio-overview.pdf
+├── resume-and-documents/
+│   ├── current-resume.docx
+│   └── cover-letter.docx
 
----
 
 ## How to Navigate This Repo
 
