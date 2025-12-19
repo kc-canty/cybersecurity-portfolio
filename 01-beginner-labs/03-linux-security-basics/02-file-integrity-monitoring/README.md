@@ -1,67 +1,97 @@
-# Findings – Linux Authentication Log Analysis
+# Linux File Integrity Monitoring (FIM) Lab
 
-## Overview
-This analysis reviews authentication-related activity observed in the Linux authentication log (`/var/log/auth.log`). The goal was to identify suspicious login behavior, assess potential security risks, and document findings in a manner consistent with entry-level SOC and system administration investigations.
-
----
-
-## Key Observations
-
-### Invalid User Attempts
-- An invalid user account named **"fakeuser"** attempted to authenticate via SSH.
-- Source IP address: **127.0.0.1 (loopback)**.
-- Invalid user attempts often indicate **username enumeration** or probing for valid accounts.
-
-### Failed Password Attempts
-- Multiple failed SSH password attempts were recorded for the invalid user **"fakeuser"**.
-- Authentication attempts were rejected by the system.
-- No successful login was observed.
+## Objective
+Simulate unauthorized modification of Linux system files and detect the changes using baseline SHA256 hashing, timestamp inspection, and recent-modification scanning.  
+This lab mirrors core functionality found in enterprise File Integrity Monitoring tools such as **Wazuh**, **Tripwire**, and **OSSEC**.
 
 ---
 
-## Behavioral Analysis
-- The repeated pattern of invalid user attempts followed by failed password attempts is consistent with **brute-force credential guessing behavior**.
-- Although the source IP was local (loopback), the activity **accurately simulates real-world external probing and attack patterns**.
-- No evidence of privilege escalation or account compromise was detected.
+## Skills Demonstrated
+
+- Establishing a baseline of trusted file hashes  
+- Detecting unauthorized file changes (hash mismatch)  
+- Using `stat` to analyze modification timestamps (mtime/ctime)  
+- Identifying recently changed files with `find`  
+- Understanding persistence and tampering behaviors  
+- Mapping Linux activity to MITRE ATT&CK  
+- Producing SOC-style notes and a findings summary  
 
 ---
 
-## MITRE ATT&CK Mapping
-The observed behavior aligns with the following MITRE ATT&CK techniques:
+## Lab Summary
 
-- **T1110 – Brute Force**
-- **T1078 – Valid Accounts** (attempted but unsuccessful)
-- **T1059 – Command and Scripting Interpreter** (SSH-related interactions)
+This lab shows how a defender can detect unauthorized file modification—one of the most common methods attackers use to:
 
----
+- modify configurations  
+- hide malicious code  
+- establish persistence  
+- weaken system security  
 
-## Impact Assessment
-If this activity originated from an external source, it could indicate:
-- Username enumeration
-- Credential stuffing attempts
-- Early-stage reconnaissance prior to a larger attack
-
-In this case, system controls successfully prevented unauthorized access.
+By comparing current file states against a trusted baseline, we can quickly determine whether a file has been altered.
 
 ---
 
-## Analyst Notes
-- Repeated invalid user and failed password attempts are common early indicators of unauthorized access attempts.
-- These events should be monitored closely, especially if originating from external IP addresses.
-- Proper logging and alerting are critical for early detection.
+## Methodology
+
+1. **Created a clean baseline** of three system-like files.  
+2. Generated SHA256 hashes and saved them to `baseline/hashes.txt`.  
+3. Simulated an attack by modifying `file2.txt`.  
+4. Recalculated hashes and identified the mismatch.  
+5. Used `stat` to reveal updated modification/change timestamps.  
+6. Used `find` to identify recently modified files.  
+7. Documented all findings and mapped activity to MITRE ATT&CK.  
 
 ---
 
-## Recommendations
-To reduce the risk of successful brute-force or enumeration attacks:
+## MITRE ATT&CK Techniques
 
-- Enable **fail2ban** to automatically block repeated failed login attempts
-- Disable **root login over SSH**
-- Enforce **strong password policies**
-- Transition to **SSH key-based authentication only**
-- Monitor authentication logs regularly or forward them to a SIEM
+| Technique ID | Name                                  |
+|--------------|----------------------------------------|
+| **T1565**    | Data Manipulation                      |
+| **T1070**    | Indicator Removal / Tampering          |
+| **T1547**    | Persistence via Modified Files         |
+| **T1027**    | Obfuscated or Modified Files           |
 
 ---
 
-## Conclusion
-This investigation identified simulated brute-force behavior targeting SSH authentication. While no compromise occurred, the activity reflects common real-world attack techniques and highlights the importance of proactive monitoring and hardening of authentication services.
+## Tools Used
+- `sha256sum`  
+- `stat`  
+- `find`  
+- Bash (Ubuntu / WSL2)
+
+---
+
+## Evidence
+All screenshots for this lab are stored in the `evidence/` directory:
+- Baseline hashes  
+- Modified file hash comparison  
+- Timestamp changes  
+- Recent-modification scan output  
+
+---
+
+## Notes & Reporting
+- Analyst notes located in `notes/event-notes.md`  
+- Findings summary located in `notes/findings-summary.md`
+
+---
+
+## Analyst Value
+
+This lab demonstrates my ability to:
+
+- Build defensive detection processes from scratch  
+- Validate file integrity without relying on third-party tools  
+- Identify indicators of tampering, persistence, and misconfiguration  
+- Explain system artifacts in clear, SOC-ready language  
+- Analyze Linux behavior in a methodical, evidence-driven manner  
+
+These are foundational skills for **SOC Analyst**, **Threat Hunter**, **Incident Responder**, and **Cloud Security** roles.
+
+---
+
+## Author
+**Keith C. Canty**  
+Aspiring Security Analyst & Cloud Security Engineer  
+GitHub Portfolio: https://github.com/kc-canty/soc-analyst-labs
