@@ -6,7 +6,7 @@ Each lab in this portfolio follows a consistent structure to ensure clarity, rep
 Each lab directory contains:
 - `README.md` – Lab objective, steps taken, and conclusions
 - `evidence/` – Screenshots or logs collected during the lab
-- `notes.md` – Reflections, challenges, and future improvements
+- `findings.md` – Reflections, challenges, and future improvements
 
 ## Time Scope
 - Beginner labs are designed to be completed in 60–75 minutes
