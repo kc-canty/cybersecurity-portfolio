@@ -36,6 +36,7 @@ See `notes/findings-summary.md` for a human-readable breakdown of all detected e
 
 ## Author
 Keith C. Canty – Cybersecurity Analyst (In Progress)
-GitHub: github.com/kc-canty/soc-analyst-labs/
+linkedin.com/in/keith-canty
+github.com/kc-canty/cybersecurity-portfolio
 
 
