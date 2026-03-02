@@ -23,10 +23,9 @@ This is a **living portfolio**. Labs are added incrementally as skills deepen.
 
 ## Certifications (In Progress / Earned)
 
-- **CompTIA Security+** (In Progress - expected Dec 2025)
-- **PCEP – Certified Entry-Level Python Programmer Certification Exam** (In Progress - expected Dec 2025)
+- **CompTIA Security+** (Earned Feb 2026)
+- **PCEP – Certified Entry-Level Python Programmer Certification Exam** (In Progress - expected Mar 2026)
 - **Microsoft AZ-900 (Azure Fundamentals)** (In Progress)  
-- **Cisco CCNA** (In Progress)  
 - **Salesforce Associate** (Earned - Apr 2025)
 
 Certifications provide the theoretical foundation; labs in this repository demonstrate hands-on application.
