@@ -24,7 +24,7 @@ This is a **living portfolio**. Labs are added incrementally as skills deepen.
 ## Certifications (In Progress / Earned)
 
 - **CompTIA Security+** (Earned Feb 2026)
-- **Fortinet NSE 1-3 (Earned Mar 2026)
+- **Fortinet NSE 1-3** (Earned Mar 2026)
 - **PCEP – Certified Entry-Level Python Programmer Certification Exam** (In Progress - expected Apr 2026)
 - **Microsoft AZ-900 (Azure Fundamentals)** (In Progress)  
 - **Salesforce Associate** (Earned - Apr 2025)
